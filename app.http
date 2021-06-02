@@ -1,0 +1,20 @@
+GET http://localhost:3000/todos/?status=IN%20PROGRESS
+###
+GET http://localhost:3000/todos/1/
+###
+GET http://localhost:3000/agenda/?date=2021-2-23
+###
+POST http://localhost:3000/todos/
+Content-Type: application/json
+
+{
+  "id": 8,
+  "todo": "Complete Learning Python",
+  "priority": "HIGH",
+  "status": "IN PROGRESS",
+  "category": "LEARNING",
+  "dueDate": "2021-03-22"
+}
+###
+  console.log(status, priority, category, date, dueDate);
+DELETE http://localhost:3000/todos/6/
